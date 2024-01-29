@@ -16,3 +16,7 @@ Go to the workdir containing the **'python ascii_art_generator.py'** file.
 Make sure to have Python installed and do **'pip install pyfiglet Pillow'**.
 
 Run the script with **'python ascii_art_generator.py'**.
+
+## Dependencies
+- pyfiglet
+- pillow
