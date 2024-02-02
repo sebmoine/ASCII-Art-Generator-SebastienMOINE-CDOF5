@@ -14,7 +14,7 @@ def select_font():
     while True:
         choice = input("Enter the number of your font choice: ")
         if choice.isdigit() and 0 < int(choice) <= len(fonts):
-            return fonts[int(choice)]
+            return fonts[int(choice)-1]
         else:
             print("Invalid choice. Please enter a valid number.")
 
