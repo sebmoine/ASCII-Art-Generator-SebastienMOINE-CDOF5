@@ -1,8 +1,8 @@
 import pyfiglet
 
-def generate_ascii_art(text, fontsize=None, font="standard"):
+def generate_ascii_art(text, font="standard"):
     # Using pyfiglet for ASCII art conversion
-    ascii_art = pyfiglet.figlet_format(text, font=font, width=fontsize)
+    ascii_art = pyfiglet.figlet_format(text, font=font)
     return ascii_art
 
 def select_font():
@@ -20,10 +20,9 @@ def select_font():
 
 def main():
     user_input = input("Enter text for ASCII art: ")
-    font_size_input = input("Enter font size: ")
     font_choice = select_font()
     
-    art = generate_ascii_art(user_input, int(font_size_input), font_choice)
+    art = generate_ascii_art(user_input, font=font_choice)
     print(art)
 
 if __name__ == "__main__":
