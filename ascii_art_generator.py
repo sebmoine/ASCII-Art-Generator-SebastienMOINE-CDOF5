@@ -19,7 +19,9 @@ def select_font():
             print("Invalid choice. Please enter a valid number.")
 
 def main():
-    user_input = input("Enter text for ASCII art: ")
+    while not user_input.strip():
+        print("Please enter a non-empty word or sentence.")
+        user_input = input("Enter text for ASCII art: ")
     font_choice = select_font()
     
     art = generate_ascii_art(user_input, font=font_choice)
